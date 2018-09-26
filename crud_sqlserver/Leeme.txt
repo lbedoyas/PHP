@@ -1,0 +1,23 @@
+Leeme: CRUD SQL Server
+
+Para que el proyecto funcione debes crear una base de datos en SQL Server que se llame prueba_usuarios y luego ejecutar el siguiente script
+
+USE [prueba_usuarios]
+GO
+
+/****** Object:  Table [dbo].[usuarios]    Script Date: 26/09/2018 08:32:55 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[usuarios](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[usuario] [varchar](50) NOT NULL,
+	[password] [varchar](50) NOT NULL,
+	[email] [varchar](50) NOT NULL
+) ON [PRIMARY]
+
+GO
+
